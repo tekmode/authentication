@@ -21,7 +21,7 @@ router.get('/signup', function(req, res, next) {
 });
 router.get('/profile',loggedin, function(req, res, next) {
 sess=req.session;
-res.send(sess,'<br \><a href="/logout"> Click Here </a>for Logout ');
+res.send(sess);
 
 });
 router.get('/logout',function(req,res){
